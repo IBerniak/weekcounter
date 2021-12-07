@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>Week Counter</title>
+    </head>
+    <body>
+      <h1>Calculation a number of a week from the date</h1>
+      <form method="POST" class="date-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-default">Calculate</button>
+      </form>
+    </body>
+</html>
